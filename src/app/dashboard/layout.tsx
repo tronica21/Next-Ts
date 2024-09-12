@@ -5,7 +5,7 @@ export default function DashLayout({
 }>) {
   return (
     <>
-      <section className='container h-screen bg-slate-100 p-8'>
+      <section className='container h-screen rounded-md bg-slate-100 p-8'>
         {children}
       </section>
     </>
