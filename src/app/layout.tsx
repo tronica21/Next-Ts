@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
-import { Roboto } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import Navigation from '@/components/navigation'
 
-const roboto = Roboto({
+const poppins = Poppins({
   weight: '400',
   subsets: ['latin'],
   display: 'swap'
@@ -32,11 +32,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' className={roboto.className}>
+    <html lang='en' className={poppins.className}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navigation />
+        <div className='flex justify-center'>
+          <Navigation />
+        </div>
+
         {children}
       </body>
     </html>

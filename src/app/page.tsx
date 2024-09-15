@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <section>
-      <div className='grid grid-cols-2'>
+      <div className='mt-8 grid grid-cols-2'>
         <div className='container h-screen'>
           <div className='flex h-screen flex-col justify-center gap-4 lg:ml-8'>
             <div className='text-3xl font-bold'>Next Starter</div>
